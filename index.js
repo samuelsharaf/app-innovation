@@ -24,6 +24,11 @@ app.get('/clocks', function (req, res, next) {
   while (new Date().getTime() < start + 100);
   res.json({hello: "World"})
 });
+app.get('/vangurd', function (req, res, next) {
+  setTimeout(() => {
+    res.json({hello: "Vanguard Team"})
+  }, 500);
+});
 
 app.get('/atan2/:count', (req, res, next) => {
   let x = 0;
