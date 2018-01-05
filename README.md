@@ -1,10 +1,10 @@
-Heroku App Innovation Workshop
+# Heroku App Innovation Workshop
 
-Introduction
+## Introduction
 
 Welcome to the Heroku App Innovation Workshop. This workshop is intended for developers and architects with hands-on exercises. The goal of this workshop is to provide you a good overall understanding of Heroku as a managed platform for app deployment, scaling and extending the app, and how it integrates with the Salesforce Sales and Service clouds. 
 
-**High Level Agenda**
+### High Level Agenda
 
 * 8:30am | Intro + Heroku Overview
 * 9:30am | App Exercise Discussion
@@ -14,42 +14,42 @@ Welcome to the Heroku App Innovation Workshop. This workshop is intended for dev
 * 2:00pm | Use Case Discussion
 * 3:15pm | Team Presentations + Prizes
 
-* * *
 
-Heroku App Innovation Workshop Prerequisites
 
-Required Online Accounts (mandatory)
+## Heroku App Innovation Workshop Prerequisites
+
+### Required Online Accounts (mandatory)
 
 * Sign up for Heroku free account at https://signup.heroku.com (https://signup.heroku.com/)
 * Create a free github account at https://github.com/join
 * If using windows laptop (not mac or linux) sign up for Cloud9IDE at https://c9.io/signup
 * Create a free Salesforce Developer Account at https://developer.salesforce.com/signup
 
-Required Pre-work (not mandatory)
+### Required Pre-work (not mandatory)
 
 * Complete the Salesforce trails which will get you started with the basics of deploying apps on Heroku at https://trailhead.salesforce.com/en/trails/heroku_enterprise
 
-Training Org
+### Training Org
 
 Once we have all of the the prerequisites installed and set up, you’ll need to let the trainer know your account email address. They will add you to the training org which will be used for app deployment and exercises.
 * * *
 
-5 Minute Break
+## 5 Minute Break
 
 * * *
 
-One slide overview of Heroku Architecture (20 minutes)
+### One slide overview of Heroku Architecture (20 minutes)
 
 https://goo.gl/c4T1A8
 
 * * *
 
-App Exerises
+## App Exerises
 
 For the app exercises, we will be using a simple Node.JS app (https://github.com/heroku/app-innovation). Note that this app is forked from heroku NodeJS getting started app with a few changes for this workshop.
 
 
-1 - Fork the Github Repository and Setup Dev Environment
+### 1 - Fork the Github Repository and Setup Dev Environment
 
 * Fork the Github repo (https://github.com/heroku/app-innovation) to your github account (via github dashboard).
 * On Cloud9 console clone the repo e.g. if you are cloning from heroku/app-innovation you will use the following command:
@@ -62,7 +62,7 @@ sh setup.sh && . ~/.profile
 
 * Note that if using Mac or Linux laptops, Cloud9 is not mandatory but highly recommended.
 
-2 - Deploy to Heroku
+### 2 - Deploy to Heroku
 
 From the command-line in Cloud9 run the following commands:
 
@@ -72,14 +72,14 @@ git push heroku master
 
 Open your Heroku app and you should see the app running
 
-3 - Extending the App with Logging add-on
+### 3 - Extending the App with Logging add-on
 
 Extend the app with logging add-on
 
 heroku addons:create papertrail
 heroku addons:open papertrail
 
-4 - Extending the App with Postgres DB
+### 4 - Extending the App with Postgres DB
 
 In this step you will add a free Heroku Postgres Starter Tier dev database to your app.
 
@@ -123,7 +123,7 @@ app.get('/db', function (request, response) {
 
 4. \q
 
-4b - Add Heroku Connect
+### 4b - Add Heroku Connect
 
 Add Heroku Connect (Bi-directional sync engine between Heroku Postgres and Salesforce (sales and service clouds).
 
@@ -138,7 +138,7 @@ Bonus -- Once the data is synced to database, modify the database code in previo
 
 Create a new route in index.js name it salesforce
 
-5 - Monitoring: Exercise
+### 5 - Monitoring: Exercise
 
 Offense
 
@@ -180,7 +180,7 @@ Exercise
 
 Don't forget to scale down at the end of the day!
 
-6 - Heroku CI/CD and Review Apps
+### 6 - Heroku CI/CD and Review Apps
 
 Setup the Pipeline
 
